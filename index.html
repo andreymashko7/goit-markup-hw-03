@@ -17,34 +17,41 @@
   <body>
     <!-- Шапка сайта -->
 
-    <header class="page-header">
-      <div class="container">
+    <header>
+      <div class="page-header container">
         <nav>
-          <a href="#" class="logo"><span>Web</span>Studio</a>
-          <ul class="site-nav list">
-            <li class="item"><a href="#" class="link current">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="item"><a href="#" class="link">Контакты</a></li>
-          </ul>
+          <div class="main-nav">
+            <div class="logo">
+              <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+            </div>
+            <div class="site-nav">
+              <ul class="site-nav list">
+                <li class="item">
+                  <a href="#" class="link current">Студия</a>
+                </li>
+                <li class="item">
+                  <a href="./portfolio.html" class="link">Портфолио</a>
+                </li>
+                <li class="item"><a href="#" class="link">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
-      </div>
 
-      <div class="container">
-        <ul class="auth-nav list">
-          <li>
-            <img src="./images/envelope.svg" alt="лого для почты" />
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
-          </li>
-
-          <li>
-            <img src="./images/Vector.svg" alt="лого для телефона" />
-            <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        <div class="contacts">
+          <ul class="auth-nav list">
+            <li class="item">
+              <img src="./images/envelope.svg" alt="лого для почты" />
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <img src="./images/Vector.svg" alt="лого для телефона" />
+              <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -52,10 +59,10 @@
       <!-- Блок герой -->
 
       <section class="hero">
-        <!-- <div class="container"> -->
-        <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-        <a href="#" class="button">Заказать услугу</a>
-        <!-- </div> -->
+        <div class="container">
+          <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
+          <a href="#" class="button">Заказать услугу</a>
+        </div>
       </section>
 
       <!-- Это  заголовок ,который будет скрываться в будущем -->
@@ -63,9 +70,14 @@
       <section class="section">
         <div class="container">
           <h2 class="hidden-title">Наши преимущества</h2>
-          <ul class="list">
-            <li>
-              <img src="./images/antenna1.svg" alt="картинка спутник" />
+          <ul class="list information">
+            <li class="item">
+              <img
+                src="./images/antenna1.svg"
+                alt="картинка спутник"
+                width="278"
+                height="120"
+              />
               <h3 class="section-title">Внимание к деталям</h3>
               <p class="section-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -73,8 +85,13 @@
               </p>
             </li>
 
-            <li>
-              <img src="./images/clock1.svg" alt="картинка часы" />
+            <li class="item">
+              <img
+                src="./images/clock1.svg"
+                alt="картинка часы"
+                width="278"
+                height="120"
+              />
               <h3 class="section-title">Пунктуальность</h3>
               <p class="section-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -82,8 +99,13 @@
               </p>
             </li>
 
-            <li>
-              <img src="./images/diagram1.svg" alt="картинка компьютер" />
+            <li class="item">
+              <img
+                src="./images/diagram1.svg"
+                alt="картинка компьютер"
+                width="278"
+                height="120"
+              />
               <h3 class="section-title">Планирование</h3>
               <p class="section-text">
                 Равным образом консультация с широким активом в значительной
@@ -91,8 +113,13 @@
               </p>
             </li>
 
-            <li>
-              <img src="./images/astronaut1.svg" alt="астронавт" />
+            <li class="item">
+              <img
+                src="./images/astronaut1.svg"
+                alt="астронавт"
+                width="278"
+                height="120"
+              />
               <h3 class="section-title">Современные технологии</h3>
               <p class="section-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -106,8 +133,8 @@
 
           <!-- <section class="exampls"> -->
           <h2 class="exampls-title">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li>
+          <ul class="list works">
+            <li class="item">
               <img
                 class="img"
                 src="./images/img1.jpg"
@@ -118,7 +145,7 @@
 
               <h3 class="exampls-text">Десктопные приложения</h3>
             </li>
-            <li>
+            <li class="item">
               <img
                 class="img"
                 src="./images/box.jpg"
@@ -129,7 +156,7 @@
 
               <h3 class="exampls-text">Мобильные приложения</h3>
             </li>
-            <li>
+            <li class="item">
               <img
                 class="img"
                 src="./images/img.jpg"
@@ -149,8 +176,8 @@
       <section class="team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="list">
-            <li>
+          <ul class="list workers">
+            <li class="item">
               <img
                 src="./images/img5.jpg"
                 alt="фото дизайнера"
@@ -159,7 +186,7 @@
               />
               <h3 class="team-title-short">John Smith</h3>
               <p class="team-text">Product Designer</p>
-              <ul class="list">
+              <ul class="list social">
                 <li>
                   <a
                     href="https://www.instagram.com/"
@@ -189,7 +216,7 @@
               </ul>
             </li>
 
-            <li>
+            <li class="item">
               <img
                 src="./images/img6.jpg"
                 alt="фото разработчика"
@@ -198,7 +225,7 @@
               />
               <h3 class="team-title-short">Marta Stewart</h3>
               <p class="team-text">Frontend Developer</p>
-              <ul class="list">
+              <ul class="list social">
                 <li>
                   <a
                     href="https://www.instagram.com/"
@@ -228,7 +255,7 @@
               </ul>
             </li>
 
-            <li>
+            <li class="item">
               <img
                 src="./images/img7.jpg"
                 alt="маркетолог"
@@ -237,7 +264,7 @@
               />
               <h3 class="team-title-short">Robert Jakis</h3>
               <p class="team-text">Marketing</p>
-              <ul class="list">
+              <ul class="list social">
                 <li>
                   <a
                     href="https://www.instagram.com/"
@@ -266,7 +293,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/img8.jpg"
                 alt="дизайнер юа"
@@ -275,7 +302,7 @@
               />
               <h3 class="team-title-short">Martin Doe</h3>
               <p class="team-text">UI Designer</p>
-              <ul class="list">
+              <ul class="list social">
                 <li>
                   <a
                     href="https://www.instagram.com/"

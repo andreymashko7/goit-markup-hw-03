@@ -16,16 +16,13 @@ body {
   letter-spacing: 0.03em;
 }
 
-.page-header {
-  background-color: teal;
-}
-
 .container {
   width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid tomato;
 }
 
 .list {
@@ -48,15 +45,34 @@ body {
 .logo > span {
   color: var(--accent-color);
 }
+
 /* Навигация */
 
-.site-nav {
+.page-header {
   display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.site-nav,
+.auth-nav {
+  display: flex;
+}
+
+.site-nav.list {
+  margin-left: 86px;
 }
 
 .site-nav .item {
   margin-right: 50px;
-  outline: 2px solid red;
 }
 
 .site-nav .item:last-child {
@@ -64,6 +80,9 @@ body {
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -83,6 +102,10 @@ body {
   color: var(--accent-color);
 }
 
+.auth-nav .item + .item {
+  margin-left: 30px;
+}
+
 .auth-nav .link {
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -100,7 +123,7 @@ body {
 
 .hero-title {
   /* width: 646px; */
-  margin-top: 200px;
+  margin-top: 0;
   margin-bottom: 46px;
   font-weight: 900;
   font-size: 44px;
@@ -157,11 +180,27 @@ body {
   line-height: 1.71;
 }
 
+.list.information {
+  display: flex;
+}
+
+.section .item {
+  margin-right: 30px;
+}
+
+.section .item:last-child {
+  margin-right: 0;
+}
+
 /* карточки товара */
 
 /* .exampls { */
 /* outline: 2px solid green; */
 /* } */
+
+.list.works {
+  display: flex;
+}
 
 .exampls-title {
   margin-top: 0;
@@ -193,6 +232,26 @@ body {
 
 /* карточки работников */
 
+.list.workers {
+  display: flex;
+  text-align: center;
+}
+
+.team .item {
+  margin-right: 30px;
+}
+
+.team .item:last-child {
+  margin-right: 0;
+}
+
+.list .social {
+  display: flex;
+  margin-bottom: 37px;
+  justify-content: center;
+  background-color: tomato;
+}
+
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -201,7 +260,7 @@ body {
 
 .team .team-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -209,12 +268,16 @@ body {
   background-color: red;
 }
 .team .team-title-short {
+  margin-top: 30px;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
 .team .team-text {
+  margin-top: 10px;
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
