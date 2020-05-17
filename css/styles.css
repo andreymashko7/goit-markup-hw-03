@@ -241,6 +241,10 @@ body {
   margin-right: 30px;
 }
 
+section {
+  background-color: teal;
+}
+
 .team .item:last-child {
   margin-right: 0;
 }
@@ -297,6 +301,10 @@ body {
   line-height: 1.17;
   text-align: center;
   background-color: tomato;
+}
+
+.list.company {
+  display: flex;
 }
 
 /* футер */
