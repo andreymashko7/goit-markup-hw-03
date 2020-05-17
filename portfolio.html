@@ -16,50 +16,74 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="page-header">
-      <div class="container">
+    <header>
+      <div class="page-header container">
         <nav>
-          <a href="#" class="logo"><span>Web</span>Studio</a>
-          <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li><a href="#" class="link current">Портфолио</a></li>
-            <li><a href="#" class="link">Контакты</a></li>
-          </ul>
+          <div class="main-nav">
+            <div class="logo">
+              <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+            </div>
+            <div class="site-nav">
+              <ul class="site-nav list">
+                <li class="item">
+                  <a href="./index.html" class="link">Студия</a>
+                </li>
+                <li class="item">
+                  <a href="#" class="link current">Портфолио</a>
+                </li>
+                <li class="item"><a href="#" class="link">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
-      </div>
 
-      <div class="container">
-        <ul class="auth-nav list">
-          <li>
-            <img src="./images/envelope.svg" alt="лого для почты" />
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
-          </li>
-
-          <li>
-            <img src="./images/Vector.svg" alt="лого для телефона" />
-            <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        <div class="contacts">
+          <ul class="auth-nav list">
+            <li class="item">
+              <img src="./images/envelope.svg" alt="лого для почты" />
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <img src="./images/Vector.svg" alt="лого для телефона" />
+              <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
     <!-- кнопки -->
     <main>
       <section class="btn">
         <!-- Заголовок который уберется в дальнейшем-->
-        <div class="container">
+        <div class="container menu">
           <h1 class="btn-title">Наши работы</h1>
-          <ul class="list">
-            <li><button type="button" class="btn-type">Все</button></li>
-            <li><button type="button" class="btn-type">Веб-сайты</button></li>
-            <li><button type="button" class="btn-type">Приложения</button></li>
-            <li><button type="button" class="btn-type">Дизайн</button></li>
-            <li><button type="button" class="btn-type">Маркетинг</button></li>
-          </ul>
+          <div class="filtr">
+            <ul class="list filtr">
+              <li class="item">
+                <button type="button" class="btn-type">Все</button>
+              </li>
+              <li class="item">
+                <button type="button" class="btn-type">Веб-сайты</button>
+              </li>
+              <li class="item">
+                <button type="button" class="btn-type">Приложения</button>
+              </li>
+              <li class="item">
+                <button type="button" class="btn-type">Дизайн</button>
+              </li>
+              <li class="item">
+                <button type="button" class="btn-type">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
+
           <!-- Блок карточки -->
-          <ul class="list">
-            <li class="group">
+
+          <ul class="list cards">
+            <li class="group item">
               <a href="#" class="group-link">
                 <img
                   src="./images/img10.jpg"
@@ -77,7 +101,7 @@
               </a>
             </li>
 
-            <li class="group">
+            <li class="group item">
               <a href="#" class="groop-link">
                 <img
                   src="./images/img11.jpg"
@@ -94,7 +118,7 @@
               </a>
             </li>
 
-            <li class="group">
+            <li class="group item">
               <a href="#" class="group-link">
                 <img
                   src="./images/img12.jpg"
@@ -111,7 +135,7 @@
               </a>
             </li>
 
-            <li class="group">
+            <li class="group item">
               <a href="#" class="group-link">
                 <img
                   src="./images/img13.jpg"
@@ -128,7 +152,7 @@
               </a>
             </li>
 
-            <li class="group">
+            <li class="group item">
               <a href="#" class="group-link">
                 <img
                   src="./images/img14.jpg"
@@ -145,7 +169,7 @@
               </a>
             </li>
 
-            <li class="group">
+            <li class="group item">
               <a href="#" class="group-link">
                 <img
                   src="./images/img15.jpg"
@@ -162,7 +186,7 @@
               </a>
             </li>
 
-            <li class="group">
+            <li class="group item">
               <a href="#" class="group-link">
                 <img
                   src="./images/img16.jpg"
@@ -179,7 +203,7 @@
               </a>
             </li>
 
-            <li class="group">
+            <li class="group item">
               <a href="#" class="group-link">
                 <img
                   src="./images/img17.jpg"
@@ -196,7 +220,7 @@
               </a>
             </li>
 
-            <li class="group">
+            <li class="group item">
               <a href="#" class="group-link">
                 <img
                   src="./images/img18.jpg"
@@ -220,56 +244,71 @@
     <!-- футер -->
 
     <footer>
-      <div class="container">
-        <a href="#" class="second-logo"><span>Web</span>Studio</a>
-        <address class="contacts">
-          <ul class="list">
+      <div class="box-text container">
+        <div class="box-adres">
+          <div class="logo-title">
+            <a href="./index.html" class="second-logo"
+              ><span>Web</span>Studio</a
+            >
+          </div>
+          <address class="contacts">
+            <ul class="list">
+              <li>
+                <p class="contacts-text">г. Киев, пр-т Леси Украинки, 26</p>
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="contacts-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:380991111111" class="tell-link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="box social">
+          <b class="social-text">присоединяйтесь</b>
+          <ul class="network list">
             <li>
-              <p class="contacts-text">г. Киев, пр-т Леси Украинки, 26</p>
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="contacts-link"
-                >info@devstudio.com</a
+              <a
+                href="https://www.instagram.com/"
+                aria-label="ссылка на инстаграм"
               >
+                <img src="./images/Ellipse1.svg" alt="лого инстаграм" />
+              </a>
             </li>
             <li>
-              <a href="tel:380991111111" class="tell-link">+38 099 111 11 11</a>
+              <a href="https://twitter.com/" aria-label="ссылка на твитер"
+                ><img src="./images/Ellipse2.svg" alt="лого твитер" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" aria-label="ссылка на фейсбук"
+                ><img
+                  class="link"
+                  src="./images/Ellipse3.svg"
+                  alt="лого фейсбук"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/"
+                aria-label="ссылка на линкидин"
+                ><img src="./images/Ellipse4.svg" alt="лого линкидин"
+              /></a>
             </li>
           </ul>
-        </address>
+        </div>
+        <div class="box">
+          <b class="button-text">Подпишитесь на рассылку</b>
+          <button type="button" class="button-second">Подписаться</button>
+        </div>
       </div>
-
-      <div class="container">
-        <b class="social-text">присоединяйтесь</b>
-        <ul class="network list">
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              aria-label="ссылка на инстаграм"
-            >
-              <img src="./images/Ellipse1.svg" alt="лого инстаграм" />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/" aria-label="ссылка на твитер"
-              ><img src="./images/Ellipse2.svg" alt="лого твитер" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/" aria-label="ссылка на фейсбук"
-              ><img class="link" src="./images/Ellipse3.svg" alt="лого фейсбук"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/" aria-label="ссылка на линкидин"
-              ><img src="./images/Ellipse4.svg" alt="лого линкидин"
-            /></a>
-          </li>
-        </ul>
-      </div>
-      <div class="container">
-        <b class="button-text">Подпишитесь на рассылку</b>
-        <button type="button" class="button-second">Подписаться</button>
+      <div class="container copyrite">
         <p class="author">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
