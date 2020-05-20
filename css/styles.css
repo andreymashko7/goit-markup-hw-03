@@ -15,9 +15,10 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+/* утилиты */
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -202,11 +203,16 @@ body {
   text-align: center;
 }
 
+.text-border {
+  overflow: hidden;
+  border-radius: 0px 0px 4px 4px;
+}
+
 .exampls-text {
   margin-top: 0;
   margin-bottom: 0;
   padding: 27px 0px 27px 0px;
-  width: 380px;
+  width: 370px;
   color: var(--primary-white-color);
   background: rgba(47, 48, 58, 0.8);
   font-weight: 700;
@@ -244,6 +250,12 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   background: #f5f4fa;
+}
+
+.card-shadow {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .team .team-title {
@@ -411,15 +423,16 @@ footer {
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
-.container.copyrite {
-  padding-top: 28px;
-  padding-bottom: 21px;
-}
 
-.author {
+.container.copyright {
   margin-bottom: 0;
   margin-top: 0;
+  padding-top: 28px;
+  padding-bottom: 21px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.4);
+
   font-weight: normal;
   font-size: 12px;
   line-height: 2;
@@ -470,6 +483,25 @@ footer {
 
 /* Карточки товаров */
 
+.card {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 20px 23px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card-images {
+  display: block;
+}
+
 .list.cards {
   display: flex;
   flex-wrap: wrap;
@@ -494,7 +526,7 @@ footer {
 }
 
 .group .group-title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 0;
   color: var(--primary-text-color);
   font-weight: 700;
