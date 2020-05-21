@@ -31,6 +31,17 @@ body {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* логотип */
 
 .logo {
@@ -152,10 +163,6 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.hidden-title {
-  display: none;
 }
 
 .section .section-title {
@@ -459,10 +466,6 @@ footer {
   padding-bottom: 94px;
 }
 
-.btn .btn-title {
-  display: none;
-}
-
 .btn .btn-type {
   text-align: center;
   padding: 6px 22px;
@@ -506,6 +509,10 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+}
+
+.group-link {
+  display: block;
 }
 
 .group a {
