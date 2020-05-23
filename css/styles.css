@@ -171,7 +171,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -182,10 +182,23 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+.information .picture {
+  margin-bottom: 30px;
+}
 
 .list.information {
   display: flex;
 }
+
+.information .item {
+  margin-right: 30px;
+}
+
+.information .item:last-child {
+  margin-right: 0;
+}
+
+/* карточки товара */
 
 .exampls .item {
   margin-right: 30px;
@@ -194,8 +207,6 @@ body {
 .exampls .item:last-child {
   margin-right: 0;
 }
-
-/* карточки товара */
 
 .list.works {
   display: flex;
@@ -247,6 +258,7 @@ body {
 
 .team .item {
   margin-right: 30px;
+  overflow: hidden;
 }
 
 .team .item:last-child {
