@@ -42,6 +42,10 @@ body {
   overflow: hidden;
 }
 
+.img {
+  display: block;
+}
+
 /* логотип */
 
 .logo {
@@ -142,7 +146,7 @@ body {
   text-transform: uppercase;
 }
 
-.button {
+.hero button {
   display: inline-block;
   min-width: 200px;
   border-radius: 4px;
@@ -158,7 +162,7 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
-/* section */
+/* section  преимущества*/
 
 .section {
   padding-top: 94px;
@@ -198,7 +202,7 @@ body {
   margin-right: 0;
 }
 
-/* карточки товара */
+/* чем мы занимаемся (карточки товара) */
 
 .exampls .item {
   margin-right: 30px;
@@ -208,7 +212,7 @@ body {
   margin-right: 0;
 }
 
-.list.works {
+.list.exampls-box {
   display: flex;
 }
 
@@ -245,11 +249,7 @@ body {
   text-align: center;
 }
 
-.img {
-  display: block;
-}
-
-/* карточки работников */
+/* Наша команда (карточки работников) */
 
 .list.workers {
   display: flex;
@@ -291,7 +291,7 @@ body {
   line-height: 1.17;
   text-align: center;
 }
-.team .team-title-short {
+.team .team-name {
   margin-top: 30px;
   margin-bottom: 0;
   font-weight: 500;
@@ -299,7 +299,7 @@ body {
   line-height: 1.19;
 }
 
-.team .team-text {
+.team .team-work {
   margin-top: 10px;
   margin-bottom: 16px;
   color: var(--secondary-text-color);
@@ -307,6 +307,8 @@ body {
   font-size: 16px;
   line-height: 1.19;
 }
+
+/* Наши клиенты */
 
 .clients {
   padding-top: 94px;
@@ -352,43 +354,6 @@ footer {
   line-height: 1.2;
 }
 
-.social.list {
-  display: flex;
-}
-
-.social .item {
-  margin-right: 10px;
-}
-.social .item:last-child {
-  margin-right: 0px;
-}
-
-.button-text {
-  margin-bottom: 21px;
-}
-
-.logo-footer > span {
-  color: var(--accent-color);
-}
-.box-footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding-top: 48px;
-  padding-bottom: 28px;
-}
-
-.contacts .contacts-text {
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 9px;
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
 .contacts .contacts-link {
   display: inline-block;
   margin-bottom: 9px;
@@ -413,7 +378,45 @@ footer {
   line-height: 1.71;
 }
 
-.social-text {
+.box-footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 28px;
+}
+
+.contacts .contacts-text {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.social.list {
+  display: flex;
+}
+
+.social .item {
+  margin-right: 10px;
+}
+.social .item:last-child {
+  margin-right: 0px;
+}
+
+.button-text {
+  margin-bottom: 21px;
+}
+
+.logo-footer > span {
+  color: var(--accent-color);
+}
+
+.footer-text {
   display: block;
   margin-bottom: 21px;
 
@@ -483,7 +486,7 @@ footer {
   padding-bottom: 94px;
 }
 
-.btn .btn-type {
+.main-page .btn-type {
   text-align: center;
   padding: 6px 22px;
   border: none;
@@ -495,8 +498,8 @@ footer {
   line-height: 1.62;
 }
 
-.btn .btn-type:hover,
-.btn .btn-type:focus {
+.main-page .btn-type:hover,
+.main-page .btn-type:focus {
   color: var(--primary-white-color);
   background: var(--accent-color);
 }
