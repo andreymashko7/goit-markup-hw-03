@@ -146,7 +146,7 @@ body {
   text-transform: uppercase;
 }
 
-.hero button {
+.hero-button {
   display: inline-block;
   min-width: 200px;
   border-radius: 4px;
